@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Khetmani's Pomodoro Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <style type="text/css">
+    body {
+      background-color: #fafafa;
+      color: #ffffff;
+    }
+
+    .drawer-content {
+      padding: 10px;
+    }
+
+    .main-content {
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.light_blue-deep_purple.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">Khetmani's Pomodoro Clock</span>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer drawer-content">
+      <span class="mdl-layout__title">Info</span>
+      <nav class="mdl-navigation">
+        For more info about the Pomodoro Technique check out
+        <a class="mdl-navigation__link" href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Wikipedia</a>
+        Designed and Developed by John Behan from
+        <a class="mdl-navigation__link" href="http://boxitoff.com">Box It Off</a>
+      </nav>
+    </div>
+
+    <main class="mdl-layout__content main-content">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+          <canvas id="time"></canvas>
+        </div>
+      </div>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--hide-phone">
+        </div>
+        <div class="mdl-cell">
+          <button id="start-timer" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+            Start
+          </button>
+        </div>
+      </div>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+        </div>
+        <div class="mdl-cell mdl-cell--2-col-phone">
+          <button id="add-minutes" class="mdl-button mdl-button--fab mdl-button--primary mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">add</i>
+          </button>
+        </div>
+
+        <div class="mdl-cell mdl-cell--2-col-phone">
+          <button id="remove-minutes" class="mdl-button mdl-button--fab mdl-button--primary mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">remove</i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/clock.js"></script>
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+</body>
+
+</html>
